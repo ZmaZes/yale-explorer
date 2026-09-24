@@ -17,21 +17,21 @@ Usage Example: https://code.theonlygreenleaf.com/yale-explorer?param1=123&param2
 |developer-mode|Start the project with developer mode enabled|
 
 ### Progress
-Farnam Hall (o-fr)
-- Basement
-- Stairways
-- A32 & A31
-Lawrence Hall (o-lr)
-- Basement and Entranceways
-Battell Chapel (o-chpl)
-- Basement
-- Main Entranceway
-Old Campus Courtyard (o-ctyd)
-- Farnam Doors
-- Lawrence Doors
-- One of the chapel doors
-Berkeley College (r-bk)
-- Steam Tunnels (currently inaccessible, warp to r-bk:T00S-1 to see them)
+- Farnam Hall (o-fr)
+  - Basement
+  - Stairways
+  - A32 & A31
+- Lawrence Hall (o-lr)
+  - Basement and Entranceways
+- Battell Chapel (o-chpl)
+  - Basement
+  - Main Entranceway
+- Old Campus Courtyard (o-ctyd)
+  - Farnam Doors
+  - Lawrence Doors
+  - One of the chapel doors
+- Berkeley College (r-bk)
+  - Steam Tunnels (currently inaccessible, warp to r-bk:T00S-1 to see them)
 <br><br><br>
 > [!TIP]
 > If you don't want to make your own asset pack but want to contribute to the project, reach out to me and I can let you know how to take the photos and send them.
