@@ -10,24 +10,27 @@ This project aims to capture the majority of campus including secret areas you w
 |L|Switch the layout (Landscape\|Portrait\|Fullscreen)|
 
 ### Progress
-Farnam Hall
+Farnam Hall (o-fr)
 - Basement
 - Stairways
 - A32 & A31
-Lawrence Hall
+Lawrence Hall (o-lr)
 - Basement and Entranceways
-Battell Chapel
+Battell Chapel (o-chpl)
 - Basement
 - Main Entranceway
-Old Campus Courtyard
+Old Campus Courtyard (o-ctyd)
 - Farnam Doors
 - Lawrence Doors
 - One of the chapel doors
+Berkeley College (r-bk)
+- Steam Tunnels (currently inaccessible, warp to r-bk:T00S-1 to see them)
 
 ### Package System
 Each building of campus has its own zip file that contains pictures for each room/corridor.
 For example "o-fr.zip" contains assets for Old Campus — Farnam Hall.
 Most importantly, each zip file contains an assets.json file that lists every room and the points in the room that can be clicked on to take you to adjacent room.
+Use the schema file to help you make your own assets file.
 Yes, this took a lot of time, thank you for asking.
 The important thing to note is that you can actually make your own packages and load them through developer mode (I'll let you figure out how to enable it.)
 
