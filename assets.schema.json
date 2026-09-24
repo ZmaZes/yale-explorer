@@ -1,0 +1,94 @@
+{
+  "title": "AssetsSchema",
+  "description": "Schema for the assets.json file in each asset zip file.",
+  "type": "object",
+  "required": ["scenes"],
+  "properties": {
+    "scenes": {
+      "type": "object",
+      "description": "Data for each scene (key is used as the image file name, ex: A190 → A190-1.webp)",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["views"],
+        "properties": {
+          "views": {
+            "type": "array",
+            "description": "Each camera view. Unless \"back\" is specified or there is only one view, cycles through these when using the rotate button. (index is appended to view key as the image file name, ex: 1 → A190-1.webp, 2 → A190-2.webp)",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["click_points"],
+              "properties": {
+                "click_points": {
+                  "type": "array",
+                  "description": "Click triggers essentially. Consists of a list of points and an action and other attributes of that point.",
+                  "items": {
+                    "type": "object",
+                    "required": ["points", "actions"],
+                    "properties": {
+                      "points": {
+                        "type": "array",
+                        "description": "The points which create the shape that the cursor must be inside to trigger the actions when clicked. Must be clockwise, use the developer feature to generate these easily. If empty the whole screen is treated as the click area.",
+                        "items": {
+                          "type": "object"
+                        }
+                      },
+                      "type":{
+                        "type":"string",
+                        "enum":["door","stairway","doorway","hallway","big_door"]
+                      },
+                      "actions": {
+                        "type": "array",
+                        "description": "What happens when this object is clicked.",
+                        "items": {
+                          "type": "object",
+                          "oneOf": [
+                            {
+                              "description": "Action to switch to a different map scene.",
+                              "type": "object",
+                              "required": ["type", "scene"],
+                              "properties": {
+                                "type": {
+                                  "type": "string",
+                                  "enum": ["change_scene"]
+                                },
+                                "scene": {
+                                  "type": "string",
+                                  "description": "The name/ID of the target scene."
+                                },
+                                "placeholder":{
+                                  "type":"boolean"
+                                }
+                              },
+                              "additionalProperties": false
+                            },
+                            {
+                              "description": "Action to trigger an audio file playback.",
+                              "type": "object",
+                              "required": ["type", "sound"],
+                              "properties": {
+                                "type": {
+                                  "type": "string",
+                                  "enum": ["play_sound"]
+                                },
+                                "sound": {
+                                  "type": "string",
+                                  "description": "The filename or ID of the sound asset."
+                                }
+                              },
+                              "additionalProperties": false
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
