@@ -8,6 +8,12 @@ This project aims to capture the majority of campus including secret areas you w
 |Right Arrow|Turn around|
 |Click|Interact/Go to room|
 |L|Switch the layout (Landscape\|Portrait\|Fullscreen)|
+|M|Toggle the map|
+
+### Map
+**Touch Screens:** Use 1 finger to pan and 2 fingers to pinch and zoom.
+**Mouse:** Use left click to pan, use scroll wheel to zoom.
+To zoom and rotate using a mouse as if it were a touch screen, hold down right click (to set the first finger point), move your mouse (while holding right click, you should see a blue dashed line), and add left click (hold both, the line should turn orange) to set the point of your second finger, then just move your mouse and the map will zoom and rotate as if you were using a touch screen. Finally, let go of left then right click to finalize the position.
 
 ### URL Scheme
 Usage Example: https://code.theonlygreenleaf.com/yale-explorer?param1=123&param2=456
