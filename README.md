@@ -43,6 +43,7 @@ Usage Example: https://code.theonlygreenleaf.com/yale-explorer?param1=123&param2
 > If you don't want to make your own asset pack but want to contribute to the project, reach out to me and I can let you know how to take the photos and send them.
 <details>
   <summary><h2>Making your own point and click asset pack</h2></summary>
+  
 ### Package System
 Each building of campus has its own zip file that contains pictures for each room/corridor.
 For example "o-fr.zip" contains assets for Old Campus — Farnam Hall.
